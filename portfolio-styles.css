@@ -1,0 +1,383 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: none;
+	font-family: 'Fredericka the Great', cursive;
+}
+
+header {
+	width: 100vw;
+	height: 20vh;
+	position: fixed;
+	background-image: url(images/bg-variations-1-1186474.jpg);
+	background-size: 100vw 20vh;
+	/* background-size: cover; */
+	background-repeat: no-repeat;
+	background-color: goldenrod;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 5px solid darkgoldenrod;
+	box-shadow: 5px 0px 30px rgba(0, 0, 0, 1);
+}
+
+.anchor {
+	scroll-margin-top: 20vh;
+}
+
+.summary {
+	width: 20vw;
+	height: 80vh;
+	position: fixed;
+	transform: translateY(20vh);
+	border-right: 5px solid darkgoldenrod;
+	box-shadow: 0px 5px 30px rgba(0, 0, 0, 1);
+}
+
+.selectors {
+	width: 20vw;
+	height: 80vh;
+	background-image: url(images/texture-100-1156715.jpg);
+	background-size: cover;
+	background-position: right;
+	position: fixed;
+	transform: translate(80vw, 20vh);
+	border-left: 5px solid darkgoldenrod;
+	padding-top: 2rem;
+	box-shadow: 0px -5px 30px rgba(0, 0, 0, 1);
+}
+
+.selectors-int-link {
+	border-bottom: 4px solid darkgoldenrod;
+}
+
+.selectors-limit {
+	padding-top: 1rem;
+}
+
+.selector {
+	display: flex;
+	align-items: center;
+	padding: 0.5rem 4rem;
+}
+.selector h1 {
+	margin-left: 2rem;
+	background-image: url(images/brushed-metal-1-1198882.jpg);
+	background-size: cover;
+	padding: 1rem;
+	min-width: 10rem;
+	text-align: center;
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, .7);
+
+	border-radius: 1rem;
+}
+
+.btn-selector {
+	min-height: 4rem;
+	min-width: 4rem;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: rgb(255, 253, 208);
+	box-shadow: inset 0px 3px 0 rgba(255, 255, 255, 1), 0 3px 3px rgba(0, 0, 0, 0.3);
+	border-bottom: solid 3px rgba(255, 255, 255, 1);
+	font-weight: bold;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-link:hover {
+	background-color: rgb(255, 136, 136);
+	box-shadow: inset 0px 3px 0 rgb(255, 106, 106), 0 3px 3px rgba(0, 0, 0, 0.3);
+	border: none;
+	border-bottom: solid 3px rgb(255, 106, 106);
+	text-shadow: 1px 1px 0px rgb(255, 106, 106);
+}
+
+.btn-link:active {
+	background-color: rgb(255, 136, 136);
+	border-bottom: none;
+	border: 0.5px solid black;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+.btn-limit:hover {
+	background-color: rgb(136, 255, 136);
+	border-bottom: none;
+	border: 0.5px solid black;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+.btn-limit:active {
+	box-shadow: inset 0px 3px 0 rgb(106, 255, 106), 0 3px 3px rgba(0, 0, 0, 0.3);
+	border: none;
+	border-bottom: solid 3px rgb(106, 255, 106);
+	text-shadow: 1px 1px 0px rgb(106, 255, 106);
+}
+
+.summary {
+	background-image: url(images/texture-100-1156715.jpg);
+	background-size: cover;
+	background-position: left;
+}
+
+.aag-summary {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	width: 80%;
+	height: 50%;
+	margin: 2rem auto;
+	background-image: url(images/brushed-metal-1-1198882.jpg);
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, .9);
+	border-radius: 1rem;
+	padding-top: 2rem;
+	outline: 3px solid black;
+	outline-offset: -10px;
+	font-size: 1.5rem;
+}
+
+.selectors-ext-link {
+	padding-top: 1rem;
+	border-top: 4px solid darkgoldenrod;
+}
+
+.summary-detail {
+	padding-top: 1rem;
+	font-weight: 600;
+	font-size: 1.25rem;
+}
+
+.title {
+	background-image: url(images/brushed-metal-1-1198882.jpg);
+	min-width: 30%;
+	height: 6rem;
+	background-size: cover;
+	text-align: center;
+	font-size: 3rem;
+	padding: 1rem;
+	border-radius: 1rem;
+	font-weight: 700;
+	vertical-align: middle;
+	color: black;
+	outline: 3px solid black;
+	outline-offset: -10px;
+}
+
+.title-header-back {
+	outline: 4px ridge darkgoldenrod;
+	outline-offset: -15px;
+	background-image: url(images/valentin-salja-IzUa0XNlA4o-unsplash.jpg);
+	background-size: cover;
+	width: 30rem;
+	height: 8rem;
+	border-radius: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sel-title {
+	background-image: url(images/brushed-metal-1-1198882.jpg);
+	background-size: cover;
+	padding: 1rem;
+	min-width: 10rem;
+	margin: 0rem 1rem 1rem 1rem;
+	text-align: center;
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, .7);
+
+	border-radius: 1rem;
+	outline: 1px solid black;
+	outline-offset: -10px;
+}
+.main-section {
+	width: 60vw;
+	height: 80vh;
+	position: relative;
+	left: 20vw;
+	top: 20vh;
+	z-index: -3;
+}
+
+.beam {
+	width: 100%;
+	position: relative;
+
+	transform: translateY(-2px);
+	border-bottom: 5px solid black;
+	box-shadow: 0px 10px 20px black;
+	z-index: -2;
+}
+
+.container-projects {
+	z-index: -2;
+	min-height: 80vh;
+	min-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	scroll-snap-type: y proximity;
+}
+
+.project {
+	z-index: -2;
+	background-size: cover;
+	width: 100%;
+	height: 80vh;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	scroll-snap-align: start;
+}
+
+.project-aob {
+	background-image: url(images/giorgio-trovato-OKXwmdbdXkk-unsplash.jpg);
+}
+
+.project-fem-json {
+	background-image: url(images/gina-lin-m27OTMegUyA-unsplash.jpg);
+}
+
+.project-etch {
+	background-image: url(images/mick-haupt-8tN0Uq0GjCs-unsplash.jpg);
+}
+
+.project-detail {
+	z-index: -2;
+	width: 85%;
+	height: 40vh;
+	background-color: rgba(255, 255, 255, .6);
+	margin: 0 auto 1rem auto;
+	border-radius: 1rem;
+	padding: 3rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.project-images {
+	z-index: -4;
+	display: flex;
+	width: 90%;
+	height: 30vh;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.hidden {
+	opacity: 0;
+	animation: hidedetail 1s linear;
+}
+.shown {
+	opacity: 1;
+	animation: showdetail 4s linear;
+}
+
+.images {
+	width: 30%;
+
+	border-radius: 1rem;
+}
+
+.images:hover {
+	transform: scale(1.15);
+}
+
+.door {
+	height: 80%;
+	z-index: -1;
+	transform: translateX(-6%);
+	position: fixed;
+}
+
+.door-left {
+	transform: translateX(-6%) rotate(0deg);
+	transform-origin: right center;
+}
+
+.door-right {
+	/* transform: translateX(94%) rotate(180deg); */
+	transform: translateX(194%) rotate(180deg);
+	transform-origin: left center;
+}
+
+.close-door-left {
+	transform: translateX(-6%);
+	animation: cdoorL 3s linear;
+}
+
+.close-door-right {
+	transform: translateX(194%) rotate(180deg);
+	animation: cdoorR 3s linear;
+}
+
+.open-door-left {
+	animation: odoorL 3s linear;
+	transform: translateX(-96%);
+}
+
+.open-door-right {
+	animation: odoorR 3s linear;
+	transform: translateX(289%)rotate(180deg);
+}
+
+@keyframes odoorR {
+	0% {
+		transform: translateX(194%)rotate(180deg);
+	}
+	100% {
+		transform: translateX(289%)rotate(180deg);
+	}
+}
+
+@keyframes odoorL {
+	0% {
+		transform: translateX(-6%);
+	}
+	100% {
+		transform: translateX(-94%);
+	}
+}
+
+@keyframes cdoorR {
+	0% {
+		transform: translateX(289%)rotate(180deg);
+	}
+	100% {
+		transform: translateX(194%)rotate(180deg);
+	}
+}
+
+@keyframes cdoorL {
+	0% {
+		transform: translateX(-94%);
+	}
+	100% {
+		transform: translateX(-6%);
+	}
+}
+
+@keyframes showdetail {
+	0% {
+		opacity: 0;
+	}
+
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes hidedetail {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
