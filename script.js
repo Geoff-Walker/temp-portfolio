@@ -9,8 +9,6 @@ const observer = new IntersectionObserver(
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
 				openDoors();
-
-				// entry.target.scrollIntoView({ behavior: 'smooth', block: 'end' });
 			} else {
 				closeDoors();
 			}
@@ -23,8 +21,8 @@ const floorObserver = new IntersectionObserver(
 	(entries) => {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
-				// move(entry.target.id);
-				entry.target.scrollIntoView({ behavior: 'smooth', block: 'end' });
+				move(entry.target.id);
+				// entry.target.scrollIntoView({ behavior: 'smooth', block: 'end' });
 			}
 		});
 	},
@@ -62,6 +60,4 @@ function closeDoors() {
 
 function move(entry) {
 	window.location.href = '#' + entry;
-
-	console.log(entry);
 }
